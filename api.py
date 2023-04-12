@@ -5,14 +5,21 @@ import json
 from os import PathLike
 from pathlib import Path
 from sklearn.base import BaseEstimator
-
+from fastapi.encoders import jsonable_encoder
 from fastapi import FastAPI
 from pydantic import BaseModel
-
+from typing import Optional
 
 app = FastAPI()
 
-
+import additional_data as add
+from datetime import datetime
+import time
+#############################
+import warnings
+import dill
+import json
+import pandas as pd
 import additional_data as add
 from datetime import datetime
 import time
@@ -21,38 +28,41 @@ from os import PathLike
 from pathlib import Path
 from sklearn.base import BaseEstimator
 
-# Шаблон названия моделей
-model_name_pattern = 'model_*.pkl'
+warnings.filterwarnings('ignore')  # никогда не печатать соответствующие предупреждения
 
 
 # Функция таймера для замера времени выполнения операций
-def time_it():
-    elapsed_time = datetime.now() - start_time
-    return elapsed_time
+# def time_it():
+#     elapsed_time = datetime.now() - start_time
+#     return elapsed_time
 
 
-start_time = datetime.now()
+#start_time = datetime.now()
 
 
 # Необходимая функция для подготовки новых признаков
-def _distance_category(distance: float) -> str:
-    """Возвращает категорию расстояния до Москвы."""
+# def _distance_category(distance: float) -> str:
+#     """Возвращает категорию расстояния до Москвы."""
+#
+#     if distance == -1:
+#         return 'no distance'
+#     elif distance == 0:
+#         return 'moscow'
+#     elif distance < 100:
+#         return '< 100 km'
+#     elif distance < 500:
+#         return '100-500 km'
+#     elif distance < 1000:
+#         return '500-1000 km'
+#     elif distance < 3000:
+#         return '1000-3000 km'
+#     else:
+#         return '>= 3000 km'
 
-    if distance == -1:
-        return 'no distance'
-    elif distance == 0:
-        return 'moscow'
-    elif distance < 100:
-        return '< 100 km'
-    elif distance < 500:
-        return '100-500 km'
-    elif distance < 1000:
-        return '500-1000 km'
-    elif distance < 3000:
-        return '1000-3000 km'
-    else:
-        return '>= 3000 km'
 
+#################################################
+# Шаблон названия моделей
+model_name_pattern = 'model_*.pkl'
 
 # Функция загрузки модели
 def load_model(folder: PathLike) -> BaseEstimator:
@@ -79,7 +89,6 @@ def load_model(folder: PathLike) -> BaseEstimator:
 
 model = load_model('models')
 
-
 for key, value in model.metadata.items():
     print(key, ":", value)
 
@@ -87,14 +96,16 @@ for key, value in model.metadata.items():
 with open('data/examples.json', 'rb') as file:
     examples = json.load(file)
     df = pd.DataFrame.from_dict(examples)
+    example = df.iloc[[1]]
 
-for i in range(len(examples)):
-    print('=' * 100)
-    example = df.iloc[[i]]
-    #prediction = model.predict_proba(example)[:, 1]
-    prediction = model.predict(example)
-    print(example.session_id, prediction, time_it())
 
+# # for i in range(len(examples)):
+# #     print('=' * 100)
+# example = df.iloc[[1]]
+# #     #prediction = model.predict_proba(example)[:, 1]
+# pred = model.predict(example)
+#     print(example.session_id, prediction, time_it())
+# print(model.predict(example))
 class Form(BaseModel):
     session_id: str
     client_id: str
@@ -119,6 +130,7 @@ class Form(BaseModel):
 class Prediction(BaseModel):
     session_id: str
     event_value: float
+    time_execution: str
 
 
 @app.get('/status')
@@ -133,12 +145,18 @@ def version():
 
 @app.post('/predict', response_model=Prediction)
 def predict(form: Form):
+    def time_it():
+        elapsed_time = datetime.now() - start_time
+        return elapsed_time
+    start_time = datetime.now()
     df = pd.DataFrame.from_dict([form.dict()])
-    y = model['model'].predict(df)
-
+    #pr = model.predict(df)
+    t = str(time_it())
+    print("llllllllllllllllllllll", example)
+    print(model.metadata, t, example)
     return {
         'session_id': form.session_id,
-        'event_value': '2222222222222'#y[0]
+        'event_value': '0.0',  # y[0]
+        'time_execution': t
     }
-
-#uvicorn api:app --reload
+# uvicorn api:app --reload
