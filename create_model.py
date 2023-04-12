@@ -1,6 +1,11 @@
 """
 Скрипт для создания модели. 
 """
+import warnings
+import pandas as pd
+import dill
+import additional_data as add
+
 from datetime import datetime
 
 
@@ -11,8 +16,6 @@ def time_it():
 
 start_time = datetime.now()
 
-import warnings
-
 # suppress warnings
 warnings.filterwarnings('ignore')
 
@@ -20,10 +23,8 @@ from typing import Tuple, Dict, Union
 from pathlib import Path
 from datetime import datetime
 from os import PathLike
-
-import pandas as pd
-import dill
 from lightgbm import LGBMClassifier
+
 # для подготовки и оценки модели
 from sklearn.metrics import (
     roc_auc_score, accuracy_score, precision_score, recall_score, f1_score)
@@ -38,8 +39,6 @@ from feature_engine.encoding import RareLabelEncoder, OneHotEncoder
 from feature_engine.wrappers import SklearnTransformerWrapper
 from feature_engine.outliers import Winsorizer
 from feature_engine.transformation import YeoJohnsonTransformer
-
-import additional_data as add
 
 print('Загружены все библиотеки..', time_it())
 

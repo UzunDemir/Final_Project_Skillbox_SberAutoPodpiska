@@ -13,6 +13,7 @@
     python predict_test.py
 ```
 """
+import warnings
 import dill
 import json
 import pandas as pd
@@ -23,7 +24,7 @@ import time
 from os import PathLike
 from pathlib import Path
 from sklearn.base import BaseEstimator
-
+warnings.filterwarnings('ignore')   # никогда не печатать соответствующие предупреждения
 # Шаблон названия моделей
 model_name_pattern = 'model_*.pkl'
 
