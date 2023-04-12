@@ -84,11 +84,22 @@ sub_custom_question_submit_click = 619 === 0.0 %
 
 ![image](https://user-images.githubusercontent.com/94790150/231449936-e736d330-0cbe-4608-8875-3da1634b405a.png)
 
+![image](https://user-images.githubusercontent.com/94790150/231450324-565b26a6-7967-4464-9ff7-f999659b5feb.png)
+
+![image](https://user-images.githubusercontent.com/94790150/231450483-2da683a0-64be-4a1a-885c-fd1e713d8aae.png)
+
+![image](https://user-images.githubusercontent.com/94790150/231450729-4341c0b5-7c76-40f4-b61e-aee0c40fbbf9.png)
+
 
 
 
 
 * Из программы Pycharm или командной строки можно запустить обучение модели с помощью скрипта `create_model.py` (файл `additional_data.py` и папки с данными `data` и моделями `models` должны находится в той же директории). В файле `additional_data.py` собраны дополнительные данные, которые нужны для генерации признаков. 
+
+Процесс создания пайплайна полностью информативен. В каждый момент времени можно знать какая проходит процедура и сколко времени ушло на выполнение этой процедуры.
+Кстати, полностью весь процесс создания, обучения и оптимизации модели занимает всего около 10 минут.
+
+![Final_Project_Skillbox_SberAutoPodpiska – create_model py 2023-04-12 09-36-22](https://user-images.githubusercontent.com/94790150/231450940-3b3cd9b6-e70f-4a8c-bc19-0a1e7ed9c6f2.gif)
 
 
 
