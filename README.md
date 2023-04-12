@@ -126,15 +126,22 @@ sub_custom_question_submit_click = 619 === 0.0 %
 
 ## Запуск приложения
 
-Модель можно запустить стационарно в виде скрипта `predict_test.py` или в качестве API-приложения. Чтобы его запустить, необходимо установить библиотеки из `requirements.txt` и в корневой папке проекта выполнить команду:  
+Модель можно запустить стационарно в виде скрипта `predict_test.py` или в качестве API-приложения. 
+
+![image](https://user-images.githubusercontent.com/94790150/231473394-7a5f00a6-1517-4314-9091-3a8afc9b69d7.png)
+
+Чтобы его запустить, необходимо установить библиотеки из `requirements.txt` и в корневой папке проекта выполнить команду:  
 
 Время предсказания приложения в десктопной версии составляет всего около 5 милисекунд.
 
-![Final_Project_Skillbox_SberAutoPodpiska – predict_test py 2023-04-12 15-09-46 (1)](https://user-images.githubusercontent.com/94790150/231453881-5589eb0d-be34-4774-8313-5c499eec7b06.gif)
+
 
 ```
 uvicorn api:app --reload
 ```
+
+![Final_Project_Skillbox_SberAutoPodpiska – predict_test py 2023-04-12 15-09-46 (1)](https://user-images.githubusercontent.com/94790150/231453881-5589eb0d-be34-4774-8313-5c499eec7b06.gif)
+
 Запуск APi-приложения также очень быстрый.
 
 ![Final_Project_Skillbox_SberAutoPodpiska – predict_test py 2023-04-12 15-16-19_Trim (1)](https://user-images.githubusercontent.com/94790150/231461464-3f683bc2-5cb6-4219-b13e-94f415c4e75e.gif)
