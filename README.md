@@ -31,7 +31,7 @@
 ## Последовательность работы
 
 * Скопируйте данный репозиторий к себе на компьютер.
-* Скачайте [данные]((https://drive.google.com/drive/folders/1rA4o6KHH-M2KMvBLHp5DZ5gioF2q7hZw)) GA Sessions (ga_sessions.csv) и GA Hits (ga_hits.csv) и разместите их в папке `data` на уровень выше вашего проекта. 
+* Скачайте [данные](https://drive.google.com/drive/folders/1rA4o6KHH-M2KMvBLHp5DZ5gioF2q7hZw) GA Sessions (ga_sessions.csv) и GA Hits (ga_hits.csv) и разместите их в папке `data` на уровень выше вашего проекта. 
 * После этого можно запустить ноутбуки [step_1_data_analises.ipynb](https://github.com/UzunDemir/Final_Project_Skillbox_SberAutoPodpiska/blob/main/step_1_data_analises.ipynb) и [step_2_model_research.ipynb](https://github.com/UzunDemir/Final_Project_Skillbox_SberAutoPodpiska/blob/main/step_2_model_research.ipynb) и пошагово отработать каждую ячейку для анализа происходящего исследования.
 
 
