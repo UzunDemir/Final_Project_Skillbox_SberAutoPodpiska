@@ -27,12 +27,30 @@
 
 За дополнительную сумму можно приобрести услугу консьерж-сервиса — доставку автомобиля до сервисного центра и обратно на техническое обслуживание, сезонную замену шин, ремонт.
 
+## Описание структуры проекта:
+* `.idea`, `.ipynb_checkpoints`, `__pycache__` - служебные папки, сгенерированные Pycharm
+* `data` `examples.json`
+* `models` 
+* `additional_data.py`
+* `api.py`
+* `create_model.py`
+* `description.md`
+* `other.ipynb`
+* `predict_test.py`
+* `presentation.pdf`
+* `requirements.txt`
+* `step_1_data_analises.ipynb`
+* `step_1_data_analises.ipynb`
+* `step_2_model_research.ipynb`
+
+
 
 ## Последовательность работы
 
 * Скопируйте данный репозиторий к себе на компьютер.
 * Скачайте [данные](https://drive.google.com/drive/folders/1rA4o6KHH-M2KMvBLHp5DZ5gioF2q7hZw) GA Sessions (ga_sessions.csv) и GA Hits (ga_hits.csv) и разместите их в папке `data`, которую нужно создать на уровень выше вашего проекта. 
 * После этого можно запустить ноутбуки [step_1_data_analises.ipynb](https://github.com/UzunDemir/Final_Project_Skillbox_SberAutoPodpiska/blob/main/step_1_data_analises.ipynb) и [step_2_model_research.ipynb](https://github.com/UzunDemir/Final_Project_Skillbox_SberAutoPodpiska/blob/main/step_2_model_research.ipynb) и пошагово отработать каждую ячейку для анализа происходящего исследования.
+* Из программы Pycharm или командной строки можно запустить обучение модели с помощью скрипта `create_model.py` (файл `additional_data.py` и папки с данными `data` и моделями `models` должны находится в той же директории). В файле `additional_data.py` собраны дополнительные данные, которые нужны для генерации признаков. 
 
 
 
