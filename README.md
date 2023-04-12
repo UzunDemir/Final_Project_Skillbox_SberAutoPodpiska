@@ -80,6 +80,10 @@ sub_custom_question_submit_click = 619 === 0.0 %
 * NaN       6.87%
 * True      2.70%
 
+![image](https://user-images.githubusercontent.com/94790150/231449811-0c9cbe6f-0fbf-41fd-8e5f-1b23d8fe028f.png)
+
+![image](https://user-images.githubusercontent.com/94790150/231449936-e736d330-0cbe-4608-8875-3da1634b405a.png)
+
 
 
 
