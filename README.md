@@ -144,6 +144,9 @@ uvicorn api:app --reload
 
 ## Методы API
 
+![http___127 0 0 1_8000_predict - My Workspace и еще 1 страница — Личный_ Microsoft_ Edge 2023-04-12 16-01-49 (1)](https://user-images.githubusercontent.com/94790150/231466542-5d00bb1a-f85b-440e-8c55-f2c73208a395.gif)
+
+
 Для работы с приложением можно использовать запросы: 
 + `/status` (get) - для получения статуса сервиса;
 + `/version` (get) - для получения версии и метаданных модели;
