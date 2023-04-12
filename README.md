@@ -29,19 +29,18 @@
 
 ## Описание структуры проекта:
 * `.idea`, `.ipynb_checkpoints`, `__pycache__` - служебные папки, сгенерированные Pycharm
-* `data` `examples.json`
-* `models` 
-* `additional_data.py`
-* `api.py`
-* `create_model.py`
-* `description.md`
-* `other.ipynb`
-* `predict_test.py`
-* `presentation.pdf`
-* `requirements.txt`
-* `step_1_data_analises.ipynb`
-* `step_1_data_analises.ipynb`
-* `step_2_model_research.ipynb`
+* `data`- папка, где хранятся данные для проверки работоспособности приложения. `examples.json` - содержит в себе список из 5 примеров для проверки.
+* `models` - папка, куда записываются готовые модели.
+* `additional_data.py`- дополнительные данные для генерации признаков.
+* `api.py` - скрипт для проверки API-запросов.
+* `create_model.py`- скрипт, который создает пайплайн и обучает модель.
+* `description.md`- описание целевого задания.
+* `other.ipynb` - не используется
+* `predict_test.py`- скрипт, который проверяет работу приложения
+* `presentation.pdf` - презентация проекта
+* `requirements.txt`- необходимые библиотеки для установки. Pycharm автоматически устанавливает их из списка в этом файле.
+* `step_1_data_analises.ipynb` - ноутбук анализ датасетов.
+* `step_2_model_research.ipynb`- ноутбук исследования и моделирование.
 
 
 
