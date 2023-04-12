@@ -152,7 +152,17 @@ uvicorn api:app --reload
 
 Для работы с приложением можно использовать запросы: 
 + `/status` (get) - для получения статуса сервиса;
+
+![image](https://user-images.githubusercontent.com/94790150/231472065-675a304f-ebae-4bcd-8823-747aaa70d506.png)
+
 + `/version` (get) - для получения версии и метаданных модели;
+
+![image](https://user-images.githubusercontent.com/94790150/231472315-f8cb48cc-88bc-4968-9903-1f673e298a16.png)
+
+
 + `/predict` (post) - для предсказания класса одного объекта;
+
+![image](https://user-images.githubusercontent.com/94790150/231471817-18c57fd0-f8cd-4227-a705-bdba71f7c890.png)
+
 
 
