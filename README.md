@@ -22,15 +22,9 @@
 
 Ноутбуки с разведовательным анализом данных и исследованием моделей для задачи:
 
-* [step_1_data_analises.ipynb](https://github.com/UzunDemir/Final_Project_Skillbox_SberAutoPodpiska/blob/main/step_1_data_analises.ipynb). Здесь мы проводим анализ данных клиентских сессий сервиса 'СберАвтоподписка'. В этом ноутбуке реализованы три стадии машинного обучения:
+* [step_1_data_analises.ipynb](https://github.com/UzunDemir/Final_Project_Skillbox_SberAutoPodpiska/blob/main/step_1_data_analises.ipynb). Здесь мы проводим анализ данных клиентских сессий сервиса 'СберАвтоподписка'. В этом ноутбуке реализованы три стадии машинного обучения: Business understanding, Data understanding, Data preparation.
+* [step_2_model_research.ipynb](https://github.com/UzunDemir/Final_Project_Skillbox_SberAutoPodpiska/blob/main/step_2_model_research.ipynb). Здесь мы непосредственно будем заниматься исследованиями, разработкой и оптимизацией модели.
 
-1 Business understanding (выстроим понимание бизнесс-процессов сервиса 'СберАвтоподписка' и возможности для его улучшения на основе данных клиентских сессий);
-
-2 Data understanding (изучим предоставленные данные и выявим их связь с реальными процессами)
-
-3 Data preparation (подготовим данные для проведения обучения моделей)
-
-вынесены в отдельную папку `notebooks`. К ним же скопирован файл с дополнительными данными `additional_data.py` для независимости от остального проекта.
 
 ## Обучение модели
 
