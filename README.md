@@ -96,22 +96,11 @@ sub_custom_question_submit_click = 619 === 0.0 %
 
 * Из программы Pycharm или командной строки можно запустить обучение модели с помощью скрипта `create_model.py` (файл `additional_data.py` и папки с данными `data` и моделями `models` должны находится в той же директории). В файле `additional_data.py` собраны дополнительные данные, которые нужны для генерации признаков. 
 
-Процесс создания пайплайна полностью информативен. В каждый момент времени можно знать какая проходит процедура и сколко времени ушло на выполнение этой процедуры.
-Кстати, полностью весь процесс создания, обучения и оптимизации модели занимает всего около 10 минут.
 
-![Final_Project_Skillbox_SberAutoPodpiska – create_model py 2023-04-12 09-36-22](https://user-images.githubusercontent.com/94790150/231450940-3b3cd9b6-e70f-4a8c-bc19-0a1e7ed9c6f2.gif)
 
-Время предсказания приложения в десктопной версии составляет всего около 5 милисекунд.
 
-![Final_Project_Skillbox_SberAutoPodpiska – predict_test py 2023-04-12 15-09-46 (1)](https://user-images.githubusercontent.com/94790150/231453881-5589eb0d-be34-4774-8313-5c499eec7b06.gif)
 
-Запуск APi-приложения также очень быстрый.
 
-![Final_Project_Skillbox_SberAutoPodpiska – predict_test py 2023-04-12 15-16-19_Trim (1)](https://user-images.githubusercontent.com/94790150/231461464-3f683bc2-5cb6-4219-b13e-94f415c4e75e.gif)
-
-Время предсказания приложения в API версии также составляет всего около 5 милисекунд.
-
-![http___127 0 0 1_8000_predict - My Workspace и еще 1 страница — Личный_ Microsoft_ Edge 2023-04-12 15-51-22 (1)](https://user-images.githubusercontent.com/94790150/231463498-a02d5d0f-a96d-48e4-876c-0b0408fa9531.gif)
 
 ## Блокноты
 
@@ -125,16 +114,31 @@ sub_custom_question_submit_click = 619 === 0.0 %
 
 Для создания модели необходимо запустить скрипт `create_model.py` (файл `additional_data.py` и папки с данными `data` и моделями `models` должны находится в той же директории).
 
+Процесс создания пайплайна полностью информативен. В каждый момент времени можно знать какая проходит процедура и сколко времени ушло на выполнение этой процедуры.
+Кстати, полностью весь процесс создания, обучения и оптимизации модели занимает всего около 10 минут.
+
+![Final_Project_Skillbox_SberAutoPodpiska – create_model py 2023-04-12 09-36-22](https://user-images.githubusercontent.com/94790150/231450940-3b3cd9b6-e70f-4a8c-bc19-0a1e7ed9c6f2.gif)
+
 Или можно создать модель, запустив ноутбук с исследованиями моделей.
 
 ## Запуск приложения
 
 Модель можно запустить стационарно в виде скрипта `predict_test.py` или в качестве API-приложения. Чтобы его запустить, необходимо установить библиотеки из `requirements.txt` и в корневой папке проекта выполнить команду:  
 
+Время предсказания приложения в десктопной версии составляет всего около 5 милисекунд.
+
+![Final_Project_Skillbox_SberAutoPodpiska – predict_test py 2023-04-12 15-09-46 (1)](https://user-images.githubusercontent.com/94790150/231453881-5589eb0d-be34-4774-8313-5c499eec7b06.gif)
+
 ```
 uvicorn api:app --reload
 ```
+Запуск APi-приложения также очень быстрый.
 
+![Final_Project_Skillbox_SberAutoPodpiska – predict_test py 2023-04-12 15-16-19_Trim (1)](https://user-images.githubusercontent.com/94790150/231461464-3f683bc2-5cb6-4219-b13e-94f415c4e75e.gif)
+
+Время предсказания приложения в API версии также составляет всего около 5 милисекунд.
+
+![http___127 0 0 1_8000_predict - My Workspace и еще 1 страница — Личный_ Microsoft_ Edge 2023-04-12 15-51-22 (1)](https://user-images.githubusercontent.com/94790150/231463498-a02d5d0f-a96d-48e4-876c-0b0408fa9531.gif)
 В этом случае приложение будет доступно по адресу `http://127.0.0.1:8000`.
 
 ## Методы API
