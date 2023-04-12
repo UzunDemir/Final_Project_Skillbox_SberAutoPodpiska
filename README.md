@@ -10,6 +10,8 @@
 
 Полностью задание можно прочитать [отсюда](https://github.com/UzunDemir/Final_Project_Skillbox_SberAutoPodpiska/blob/main/description.md) или скачать в виде [файла-pdf](https://drive.google.com/file/d/1R-Lk45ZeXPf6v13_MfV-8qYp_1wv0N2S/view).
 
+Данные для выполнения практического задания можно скачать [отсюда](https://drive.google.com/drive/folders/1rA4o6KHH-M2KMvBLHp5DZ5gioF2q7hZw).
+
 
 ## Блокноты
 
