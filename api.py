@@ -31,34 +31,6 @@ from sklearn.base import BaseEstimator
 warnings.filterwarnings('ignore')  # никогда не печатать соответствующие предупреждения
 
 
-# Функция таймера для замера времени выполнения операций
-# def time_it():
-#     elapsed_time = datetime.now() - start_time
-#     return elapsed_time
-
-
-#start_time = datetime.now()
-
-
-# Необходимая функция для подготовки новых признаков
-# def _distance_category(distance: float) -> str:
-#     """Возвращает категорию расстояния до Москвы."""
-#
-#     if distance == -1:
-#         return 'no distance'
-#     elif distance == 0:
-#         return 'moscow'
-#     elif distance < 100:
-#         return '< 100 km'
-#     elif distance < 500:
-#         return '100-500 km'
-#     elif distance < 1000:
-#         return '500-1000 km'
-#     elif distance < 3000:
-#         return '1000-3000 km'
-#     else:
-#         return '>= 3000 km'
-
 
 #################################################
 # Шаблон названия моделей
@@ -99,13 +71,7 @@ with open('data/examples.json', 'rb') as file:
     example = df.iloc[[1]]
 
 
-# # for i in range(len(examples)):
-# #     print('=' * 100)
-# example = df.iloc[[1]]
-# #     #prediction = model.predict_proba(example)[:, 1]
-# pred = model.predict(example)
-#     print(example.session_id, prediction, time_it())
-# print(model.predict(example))
+
 class Form(BaseModel):
     session_id: str
     client_id: str
@@ -150,13 +116,13 @@ def predict(form: Form):
         return elapsed_time
     start_time = datetime.now()
     df = pd.DataFrame.from_dict([form.dict()])
-    #pr = model.predict(df)
+    y = model.predict(df)
     t = str(time_it())
     print("llllllllllllllllllllll", example)
     print(model.metadata, t, example)
     return {
         'session_id': form.session_id,
-        'event_value': '0.0',  # y[0]
+        'event_value': y[0],
         'time_execution': t
     }
-# uvicorn api:app --reload
+# запуск в директории проекта: uvicorn api:app --reload
