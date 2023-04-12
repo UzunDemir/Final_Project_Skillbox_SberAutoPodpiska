@@ -49,6 +49,11 @@
 * Скопируйте данный репозиторий к себе на компьютер.
 * Скачайте [данные](https://drive.google.com/drive/folders/1rA4o6KHH-M2KMvBLHp5DZ5gioF2q7hZw) GA Sessions (ga_sessions.csv) и GA Hits (ga_hits.csv) и разместите их в папке `data`, которую нужно создать на уровень выше вашего проекта. 
 * После этого можно запустить ноутбуки [step_1_data_analises.ipynb](https://github.com/UzunDemir/Final_Project_Skillbox_SberAutoPodpiska/blob/main/step_1_data_analises.ipynb) и [step_2_model_research.ipynb](https://github.com/UzunDemir/Final_Project_Skillbox_SberAutoPodpiska/blob/main/step_2_model_research.ipynb) и пошагово отработать каждую ячейку для анализа происходящего исследования.
+
+![image](https://user-images.githubusercontent.com/94790150/231448150-05a68281-2ed4-4316-b679-4bea84a3bdb5.png)
+
+
+
 * Из программы Pycharm или командной строки можно запустить обучение модели с помощью скрипта `create_model.py` (файл `additional_data.py` и папки с данными `data` и моделями `models` должны находится в той же директории). В файле `additional_data.py` собраны дополнительные данные, которые нужны для генерации признаков. 
 
 
