@@ -50,6 +50,24 @@
 * Скачайте [данные](https://drive.google.com/drive/folders/1rA4o6KHH-M2KMvBLHp5DZ5gioF2q7hZw) GA Sessions (ga_sessions.csv) и GA Hits (ga_hits.csv) и разместите их в папке `data`, которую нужно создать на уровень выше вашего проекта. 
 * После этого можно запустить ноутбуки [step_1_data_analises.ipynb](https://github.com/UzunDemir/Final_Project_Skillbox_SberAutoPodpiska/blob/main/step_1_data_analises.ipynb) и [step_2_model_research.ipynb](https://github.com/UzunDemir/Final_Project_Skillbox_SberAutoPodpiska/blob/main/step_2_model_research.ipynb) и пошагово отработать каждую ячейку для анализа происходящего исследования.
 
+Всего целевых действий = 104908 из 15726470 что составляет  0.67 %
+
+sub_car_claim_click = 37928 === 0.24 %
+
+sub_open_dialog_click = 25870 === 0.16 %
+
+sub_submit_success = 18439 === 0.12 %
+
+sub_car_claim_submit_click = 12359 === 0.08 %
+
+sub_call_number_click = 3653 === 0.02 %
+
+sub_callback_submit_click = 3074 === 0.02 %
+
+sub_car_request_submit_click = 2966 === 0.02 %
+
+sub_custom_question_submit_click = 619 === 0.0 %
+
 ![image](https://user-images.githubusercontent.com/94790150/231448673-8118d2ee-0bf3-4e26-b2a7-4031f043d668.png)
 
 
