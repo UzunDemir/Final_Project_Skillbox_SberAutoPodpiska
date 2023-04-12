@@ -101,6 +101,9 @@ sub_custom_question_submit_click = 619 === 0.0 %
 
 ![Final_Project_Skillbox_SberAutoPodpiska – create_model py 2023-04-12 09-36-22](https://user-images.githubusercontent.com/94790150/231450940-3b3cd9b6-e70f-4a8c-bc19-0a1e7ed9c6f2.gif)
 
+Время предсказания приложения в десктопной версии составляет всего около 5 милисекунд.
+
+![Final_Project_Skillbox_SberAutoPodpiska – predict_test py 2023-04-12 15-09-46 (1)](https://user-images.githubusercontent.com/94790150/231453881-5589eb0d-be34-4774-8313-5c499eec7b06.gif)
 
 
 ## Блокноты
