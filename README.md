@@ -8,7 +8,7 @@
 
 Целевые **метрики**: `roc-auc` > 0.65, время предсказания не более 3 секунд.
 
-Полностью задание можно прочитать [отсюда](https://github.com/UzunDemir/Final_Project_Skillbox_SberAutoPodpiska/blob/main/description.md).
+Полностью задание можно прочитать [отсюда](https://github.com/UzunDemir/Final_Project_Skillbox_SberAutoPodpiska/blob/main/description.md) или скачать в виде [файла-pdf](https://drive.google.com/file/d/1R-Lk45ZeXPf6v13_MfV-8qYp_1wv0N2S/view).
 
 
 ## Блокноты
